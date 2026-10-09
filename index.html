@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cxq的前端网页作品集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="logo" href="#top">CXQ</a>
+            <div class="nav-links">
+                <a href="#works">作品</a>
+                <a href="#how">流程</a>
+            </div>
+            <a class="btn btn-primary nav-cta" href="#works">查看作品</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="top">
+        <span class="hero-dot" aria-hidden="true"></span>
+        <h1>cxq的前端网页作品集</h1>
+        <p class="hero-sub">这是我的前端网页作品，点击卡片即可跳转到对应页面，快速浏览每一次练习与上线项目</p>
+        <p class="hero-note">无需登录，点击即可打开项目</p>
+    </header>
+
+    <main class="container">
+        <div id="error-container" class="hidden">
+            <p>No meals found. Try another search term!</p>
+        </div>
+        <div id="result-heading"></div>
+
+        <section class="section" id="works">
+            <h2>作品展示</h2>
+            <p class="section-lead">从测验、表单到食谱检索，三份独立作品都已上线，点进卡片即可体验</p>
+
+            <div id="meals" class="meals-container">
+                <article class="meal" data-url="https://work2-teal.vercel.app/">
+                    <div class="meal-visual">
+                        <img src="./image/quiztime.png" alt="Quiz Time 预览">
+                    </div>
+                    <div class="meal-info">
+                        <h3 class="meal-title"><span class="step-badge">1</span> Quiz Time</h3>
+                        <p class="meal-desc">交互测验页面，计时作答并即时反馈结果</p>
+                        <div class="meal-category">Quiz</div>
+                    </div>
+                </article>
+
+                <article class="meal" data-url="https://cxq-work1-1.vercel.app/">
+                    <div class="meal-visual">
+                        <img src="./image/register.png" alt="Register Form 预览">
+                    </div>
+                    <div class="meal-info">
+                        <h3 class="meal-title"><span class="step-badge">2</span> Register Form</h3>
+                        <p class="meal-desc">注册表单校验与状态反馈，覆盖输入与提交流程</p>
+                        <div class="meal-category">Register</div>
+                    </div>
+                </article>
+
+                <article class="meal" data-url="https://cxq-work2.vercel.app/">
+                    <div class="meal-visual">
+                        <img src="./image/recipe.png" alt="Recipe Finder 预览">
+                    </div>
+                    <div class="meal-info">
+                        <h3 class="meal-title"><span class="step-badge">3</span> Recipe Finder</h3>
+                        <p class="meal-desc">按关键词检索食谱，查看详情、配料与制作步骤</p>
+                        <div class="meal-category">Recipe</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="how">
+            <h2>How it works</h2>
+            <p class="section-lead">四个步骤走完整站：从浏览作品到打开线上页面</p>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-illustration" aria-hidden="true">
+                        <div class="illus illus-browse"></div>
+                    </div>
+                    <h3><span class="step-badge">1</span> Browse</h3>
+                    <p>在作品区浏览卡片，预览封面、标题与类型标签</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-illustration" aria-hidden="true">
+                        <div class="illus illus-select"></div>
+                    </div>
+                    <h3><span class="step-badge">2</span> Select</h3>
+                    <p>点选感兴趣的项目，卡片会轻微抬起并给出交互反馈</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-illustration" aria-hidden="true">
+                        <div class="illus illus-open"></div>
+                    </div>
+                    <h3><span class="step-badge">3</span> Open</h3>
+                    <p>在新标签页打开已部署的线上地址，不影响当前作品集</p>
+                </article>
+                <article class="step-card">
+                    <div class="step-illustration" aria-hidden="true">
+                        <div class="illus illus-review"></div>
+                    </div>
+                    <h3><span class="step-badge">4</span> Review</h3>
+                    <p>在真实页面里体验交互、布局与功能是否达到预期</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>cxq · Frontend Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
